@@ -1,7 +1,7 @@
 # Личный проект «Мишка» [![Build status][travis-image]][travis-url] [![Dependency status][dependency-image]][dependency-url]
 
 * Студент: [Иван Баранов](https://up.htmlacademy.ru/adaptive/9/user/186562).
-* Наставник: Игорь Дерябин.
+* Наставник: [Игорь Дерябин](https://up.htmlacademy.ru/adaptive/9/user/212247).
 
 ---
 
