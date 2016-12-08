@@ -54,12 +54,12 @@
     <section class="about-us">
       <h3 class="about-us__title">Коротко о нас:</h3>
       <ul class="about-us__items">
-        <li class="about-us_item about-us_item--eco">Экологически чистые материалы</li>
-        <li class="about-us_item about-us_item--price">Скандинавский стиль по российской цене</li>
-        <li class="about-us_item about-us_item--likes">Увеличивает лайки на фотографиях</li>
-        <li class="about-us_item about-us_item--handmade">Связано вручную с любовью и умилением</li>
-        <li class="about-us_item about-us_item--russian">Поддержка отечественного производителя</li>
-        <li class="about-us_item about-us_item--giftbox">Поставляется в подарочной упаковке</li>
+        <li class="about-us__item about-us__item--eco">Экологически чистые материалы</li>
+        <li class="about-us__item about-us__item--price">Скандинавский стиль по российской цене</li>
+        <li class="about-us__item about-us__item--likes">Увеличивает лайки на фотографиях</li>
+        <li class="about-us__item about-us__item--handmade">Связано вручную с любовью и умилением</li>
+        <li class="about-us__item about-us__item--russian">Поддержка отечественного производителя</li>
+        <li class="about-us__item about-us__item--giftbox">Поставляется в подарочной упаковке</li>
       </ul>
     </section>
     <section class="reviews">
@@ -99,5 +99,25 @@
         <a class="btn page-footer__copyright-link" href=""><img src="" alt="">HTML Academy</a>
       </p>
     </footer>
-  </body>
+    <div class="pop-up">
+      <form action="" class="pop-up__form order-form">
+        <fieldset class="order-form__content">
+          <legend class="order-form__title">Добавить в корзину</legend>
+          <p class="order-form__text">Выберите размер:</p>
+          <div class="order-form__size">
+            <input type="radio" name="size" id="size-s" value="size-s" checked>
+            <label for="interior">S</label>
+          </div>
+          <div class="order-form__size">
+            <input type="radio" name="size" id="size-m" value="size-m" checked>
+            <label for="interior">M</label>
+          </div>
+          <div class="order-form__size">
+            <input type="radio" name="size" id="size-l" value="size-l" checked>
+            <label for="interior">L</label>
+          </div>
+        </fieldset>
+        <button class="order-form__add-button btn btn--green" type="button">Напишите нам</button>
+      </form>
+    </div>
 </html>
