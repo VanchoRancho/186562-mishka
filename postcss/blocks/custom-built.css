@@ -1,0 +1,43 @@
+.custom-built {
+  padding: 30px;
+  font-family: "Open Sans";
+  color: #000000;
+  background-color: #fff;
+}
+
+.custom-built__about {
+  margin: 0;
+  margin-bottom: 30px;
+
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #444444;
+}
+
+.custom-built__fieldset {
+  margin: 0;
+  padding: 0;
+  padding-bottom: 8px;
+  border: none;
+  outline: none;
+}
+
+.custom-built__title {
+  margin-bottom: 23px;
+
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 16px;
+  color: #63d1bb;
+  text-transform: uppercase;
+}
+
+.custom-built__item {
+  margin-bottom: 22px;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 18px;
+  color: #000000;
+}

@@ -1,0 +1,27 @@
+.catalog-nav__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.catalog-nav__item  {
+  background-color: #63d1bb;
+
+  &--right-green {
+    background-color: #56c3b2;
+  }
+}
+
+.catalog-nav__item  a {
+  display: block;
+  padding-top: 27px;
+  padding-bottom: 28px;
+  padding-left: 29px;
+  padding-right: 180px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "Open Sans";
+  color: #fff;
+  text-decoration: none;
+}

@@ -1,0 +1,12 @@
+.page-footer {
+  background-color: #f1f1f1;
+  padding: 30px;
+  font-family: "Open Sans";
+  color: #000000;
+}
+
+.page-footer__copyright {
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 19px;
+}

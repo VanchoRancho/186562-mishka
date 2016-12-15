@@ -1,0 +1,25 @@
+.main-nav {
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "Open Sans";
+  color: #000000;
+  background-color: #fff;
+}
+
+.main-nav__items {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.main-nav__item {
+  padding-left: 76px;
+  padding-top: 28px;
+  padding-bottom: 28px;
+}
+
+.main-nav__item a {
+  text-decoration: none;
+  color: #000000;
+}
