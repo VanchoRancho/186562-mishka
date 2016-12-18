@@ -1,0 +1,17 @@
+.catalog {
+  background-color: #fff;
+}
+
+.catalog__items {
+  list-style: none;
+  margin: 0;
+  padding: 30px;
+}
+
+.catalog__item {
+  margin-bottom: 30px;
+}
+
+.catalog__item:last-child {
+  margin-bottom: 0px;
+}

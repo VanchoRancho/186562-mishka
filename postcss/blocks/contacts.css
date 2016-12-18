@@ -1,0 +1,33 @@
+.contacts {
+  background-color: #fff;
+  padding: 30px;
+  font-family: "Open Sans";
+  color: #000000;
+}
+
+.contacts__title {
+  margin: 0;
+  margin-top: 14px;
+  margin-bottom: 30px;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 30px;
+}
+
+.contacts__table {
+  margin-bottom: 42px;
+  font-size: 15px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+.contacts__map {
+  width: 320px;
+  height: 457px;
+  margin-left: -30px;
+  margin-bottom: 39px;
+  background-image: url("../img/map-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-position: center top;
+  outline: 1px solid pink;
+}

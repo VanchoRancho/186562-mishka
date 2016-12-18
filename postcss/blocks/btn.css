@@ -1,0 +1,29 @@
+.btn {
+  width: 100%;
+  display: block;
+  box-sizing: border-box;
+  padding: 20px;
+
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 17px;
+  font-family: "Open Sans";
+  color: #444444;
+  text-align: center;
+  text-transform: uppercase;
+
+  background-color: #fff;
+  border: 2px solid #444444;
+  cursor: pointer;
+  outline: none;
+
+  &:hover {
+    color: #fff;
+    background-color: #444444;
+  }
+
+  &--arrow {
+    font-size: 0;
+    border: 1px solid #ececec;
+  }
+}

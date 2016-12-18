@@ -4,16 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>HTML Academy: Мишка</title>
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
+  <body class="page-body">
     <header class="page-header">
       <div class="page-header__logo">
-        <img src="" alt="">
+        <a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка"></a>
       </div>
       <button class="page-header__nav-toggle" type="button">Открыть меню</button>
       <nav class="main-nav">
         <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="">Каталог товаров</a></li>
+          <li class="main-nav__item"><a href="catalog.html">Каталог товаров</a></li>
           <li class="main-nav__item"><a href="">Вязание на заказ</a></li>
           <li class="main-nav__item"><a href="">Поиск по сайту</a></li>
           <li class="main-nav__item"><a href="">Корзина: пока пуста</a></li>
@@ -26,8 +27,8 @@
     <section class="custom-built">
       <p class="custom-built__about">Мы будем рады воплотить в жизнь ваши пожелания! Заполните простую форму заказа и мы свяжемся с вами, чтобы уточнить детали.</p>
       <form action="" class="custom-built__order-form">
-        <fieldset class="custom-built__type">
-          <legend class="custom-built__type-title">Тип</legend>
+        <fieldset class="custom-built__fieldset custom-built__fieldset--type">
+          <legend class="custom-built__title custom-built__title--type">Тип</legend>
           <div class="custom-built__type-item">
             <input type="radio" name="type" id="interior" value="interior" checked>
             <label for="interior">Аксессуар для интерьера</label>
@@ -37,63 +38,63 @@
             <label for="toy">Детская игрушка</label>
           </div>
         </fieldset>
-        <fieldset class="custom-built__color">
-          <legend class="custom-built__color-title">Цвет</legend>
-          <div class="custom-built__color-item">
+        <fieldset class="custom-built__fieldset custom-built__fieldset--color">
+          <legend class="custom-built__title custom-built__title--color">Цвет</legend>
+          <div class="custom-built__item custom-built__item--color">
             <input type="checkbox" name="white" id="white" value="on" checked>
             <label for="white">Белый</label>
           </div>
-          <div class="custom-built__color-item">
+          <div class="custom-built__item custom-built__item--color">
             <input type="checkbox" name="grey" id="grey" value="on" checked>
             <label for="grey">Серый</label>
           </div>
-          <div class="custom-built__color-item">
+          <div class="custom-built__item custom-built__item--color">
             <input type="checkbox" name="tiffany" id="tiffany" value="on">
             <label for="tiffany">«Тиффани»</label>
           </div>
-          <div class="custom-built__color-item">
+          <div class="custom-built__item custom-built__item--color">
             <input type="checkbox" name="black" id="black" value="on">
             <label for="black">Черный</label>
           </div>
-          <div class="custom-built__color-item">
+          <div class="custom-built__item custom-built__item--color">
             <input type="checkbox" name="pink" id="pink" value="on">
             <label for="pink">Розовый</label>
           </div>
-          <div class="custom-built__color-item">
+          <div class="custom-built__item custom-built__item--color">
             <input type="checkbox" name="orange" id="orange" value="on">
             <label for="orange">Оранжевый</label>
           </div>
         </fieldset>
-        <fieldset class="custom-built__name">
-          <legend class="custom-built__name-title">ФИО</legend>
-          <div class="custom-built__name-item">
+        <fieldset class="custom-built__fieldset custom-built__fieldset--name">
+          <legend class="custom-built__title custom-built__title--name">ФИО</legend>
+          <div class="custom-built__item custom-built__item--name">
             <label for="name">Имя:</label>
             <input type="text" name="name" id="name" placeholder="Введите ваше имя*" required>
           </div>
-          <div class="custom-built__name-item">
+          <div class="custom-built__item custom-built__item--name">
             <label for="surname">Фамилия:</label>
             <input type="text" name="surname" id="surname" placeholder="Укажите фамилию*" required>
           </div>
-          <div class="custom-built__name-item">
+          <div class="custom-built__item custom-built__item--name">
             <label for="patronymic">Отчество:</label>
             <input type="text" name="patronymic" id="patronymic" placeholder="Отчество, если желаете">
           </div>
         </fieldset>
-        <fieldset class="custom-built__phone">
-          <legend class="custom-built__phone-title">Тел</legend>
-          <div class="custom-built__phone-item">
+        <fieldset class="custom-built__fieldset custom-built__fieldset--phone">
+          <legend class="custom-built__title custom-built__title--phone">Тел</legend>
+          <div class="custom-built__item custom-built__item--phone">
             <input type="tel" name="phone" id="phone" placeholder="+7 ХХХ ХХ ХХ*" required>
           </div>
         </fieldset>
-        <fieldset class="custom-built__email">
-          <legend class="custom-built__email-title">Email</legend>
-          <div class="custom-built__email-item">
+        <fieldset class="custom-built__fieldset custom-built__fieldset--email">
+          <legend class="custom-built__title custom-built__title--email">Email</legend>
+          <div class="custom-built__item custom-built__item--email">
             <input type="email" name="email" id="email" placeholder="Ваш Email*" required>
           </div>
         </fieldset>
-        <fieldset class="custom-built__additional">
-          <legend class="custom-built__additional-title">Доп</legend>
-          <div class="custom-built__additional-item">
+        <fieldset class="custom-built__fieldset custom-built__fieldset--additional">
+          <legend class="custom-built__title custom-built__title--additional">Доп</legend>
+          <div class="custom-built__item custom-built__item--additional">
             <textarea name="additional" placeholder="Опишите все ваши пожелания к заказу"></textarea>
           </div>
         </fieldset>
@@ -104,9 +105,9 @@
     <footer class="page-footer">
       <p class="page-footer__social">
         <span class="social-links">
-          <a class="social-link social-link--in" href="">Мы в Инстаграме</a>
-          <a class="social-link social-link--fb" href="">Мы в Фейсбуке</a>
-          <a class="social-link social-link--tw" href="">Мы в Твиттере</a>
+          <a class="social-links__link social-links__link--in" href="">Мы в Инстаграме</a>
+          <a class="social-links__link social-links__link--fb" href="">Мы в Фейсбуке</a>
+          <a class="social-links__link social-links__link--tw" href="">Мы в Твиттере</a>
         </span>
       </p>
       <p class="page-footer__copyright">
