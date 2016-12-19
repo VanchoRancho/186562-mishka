@@ -3,6 +3,8 @@
   padding: 30px;
   font-family: "Open Sans";
   color: #000000;
+
+  @mixin clearfix;
 }
 
 .about-us__title {
@@ -15,7 +17,29 @@
   list-style: none;
   margin: 0;
   padding: 0;
+
+  &--left {
+    @media ($(tablet-widths)) {
+      float: left;
+    }
+
+    @media ($(desktop-widths)) {
+      float: left;
+    }
+  }
+
+  &--right {
+    @media ($(tablet-widths)) {
+      float: right;
+    }
+
+    @media ($(desktop-widths)) {
+      float: right;
+    }
+  }
 }
+
+
 
 .about-us__item {
   padding-top: 60px;
@@ -24,4 +48,12 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 17px;
+
+  @media ($(tablet-widths)) {
+    width: 300px;
+  }
+
+  @media ($(desktop-widths)) {
+    width: 300px;
+  }
 }

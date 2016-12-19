@@ -1,25 +1,64 @@
 .manufacturing {
+  position: relative;
+
   padding: 30px;
   padding-top: 0px;
   font-family: "Open Sans";
   color: #000000;
   background-color: #fff;
+
+  @mixin clearfix;
+
 }
 
 .manufacturing__container {
-  padding-top: 30px;
   padding-bottom: 30px;
   outline: 1px solid #ececec;
+
+  @media ($(desktop-widths)) {
+    float: right;
+    width: 367px;
+  }
 }
 
 .manufacturing__title {
   margin: 0;
   padding-left: 91px;
   padding-right: 34px;
+  margin-bottom: 150px;
 
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+
+  @media ($(tablet-widths)) {
+    margin-bottom: 0px;
+  }
+  @media ($(desktop-widths)) {
+  }
+}
+
+.manufacturing__video {
+  position: absolute;
+  top: 48px;
+  width: 260px;
+  height: 150px;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+
+  @media ($(tablet-widths)) {
+    position: static;
+    width: 668px;
+    height: 455px;
+    background-size: 100%;
+  }
+
+  @media ($(desktop-widths)) {
+    float: left;
+    width: 682px;
+    height: 455px;
+    background-size: 100%;
+  }
 }
 
 .manufacturing__about {

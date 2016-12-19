@@ -10,10 +10,43 @@
    display: table;
    clear: both;
  }
+
+ @media ($(desktop-widths)) {
+   width: 316px;
+   box-sizing: border-box;
+ }
+
 }
 
 .product__img {
   margin-bottom: 31px;
+
+  @media ($(tablet-widths)) {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+
+  }
+
+  @media ($(desktop-widths)) {
+    float: none;
+    width: auto;
+  }
+}
+
+.product__box {
+  @mixin clearfix;
+
+  @media ($(tablet-widths)) {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+  }
+
+  @media ($(desktop-widths)) {
+    float: none;
+    width: auto;
+  }
 }
 
 .product__title {

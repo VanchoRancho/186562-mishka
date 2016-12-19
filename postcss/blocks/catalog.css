@@ -10,6 +10,11 @@
 
 .catalog__item {
   margin-bottom: 30px;
+
+  @media ($(desktop-widths)) {
+    display: inline-block;
+    vertical-align: top;
+  }
 }
 
 .catalog__item:last-child {

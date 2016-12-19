@@ -1,3 +1,6 @@
+@import "variables.css";
+@import "mixins.css";
+
 @import "global/fonts.css";
 @import "global/normalize.css";
 

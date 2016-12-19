@@ -5,6 +5,12 @@
   font-family: "Open Sans";
   color: #000000;
   background-color: #fff;
+
+  @mixin container;
+
+  @media ($(tablet-widths)) {
+    position: relative;
+  }
 }
 
 .main-nav__items {
@@ -15,11 +21,84 @@
 
 .main-nav__item {
   padding-left: 76px;
-  padding-top: 28px;
+  padding-top: 27px;
   padding-bottom: 28px;
+  border-bottom: 1px solid #ececec;
+
+  &--logo {
+    font-size: 0;
+    line-height: 0;
+    padding-left: 116px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+  }
+
+  @media ($(tablet-widths)) {
+    display: inline-block;
+    vertical-align: top;
+    border: none;
+  }
+}
+
+.main-nav__nav-toggle {
+  display: inline-block;
+  vertical-align: top;
+  width: 25px;
+  height: 25px;
+  border: 2px solid black;
+  font-size: 0;
+
+  @media ($(tablet-widths)) {
+    display: none;
+  }
+
+  @media ($(desktop-widths)) {
+    display: none;
+  }
 }
 
 .main-nav__item a {
   text-decoration: none;
   color: #000000;
+}
+
+.main-nav__items {
+
+  @media ($(tablet-widths)) {
+    position: absolute;
+    left: 0px;
+  }
+
+  @media ($(desktop-widths)) {
+    position: static;
+    float: left;
+  }
+}
+
+.main-nav__new-items {
+  display: none;
+
+  @media ($(tablet-widths)) {
+    display: none;
+  }
+
+  @media ($(desktop-widths)) {
+    display: block;
+    position: absolute;
+    left: 0px;
+  }
+}
+
+.main-nav__delivery {
+  display: none;
+
+  @media ($(tablet-widths)) {
+    display: block;
+    float: right;
+  }
+
+  @media ($(desktop-widths)) {
+    display: block;
+    float: right;
+  }
 }

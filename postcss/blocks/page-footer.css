@@ -1,12 +1,42 @@
 .page-footer {
   background-color: #f1f1f1;
-  padding: 30px;
   font-family: "Open Sans";
   color: #000000;
+
+  @media ($(tablet-widths)) {
+    line-height: 0;
+    font-size: 0;
+  }
+
+}
+
+.page-footer__logo {
+  display: none;
+  margin: 0;
+
+  @media ($(tablet-widths)) {
+    display: inline-block;
+    width: 256px;
+  }
+}
+
+.page-footer__social {
+  margin: 0;
+
+  @media ($(tablet-widths)) {
+    display: inline-block;
+    width: 256px;
+  }
 }
 
 .page-footer__copyright {
+  margin: 0;
   font-size: 19px;
   font-weight: 700;
   line-height: 19px;
+
+  @media ($(tablet-widths)) {
+    display: inline-block;
+    width: 256px;
+  }
 }

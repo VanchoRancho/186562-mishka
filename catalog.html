@@ -8,18 +8,20 @@
   </head>
   <body class="page-body">
     <header class="page-header">
-      <div class="page-header__logo">
-        <a href="index.html"><img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка"></a>
-      </div>
-      <button class="page-header__nav-toggle" type="button">Открыть меню</button>
       <nav class="main-nav">
-        <ul class="main-nav__items">
-          <li class="main-nav__item"><a href="">Каталог товаров</a></li>
-          <li class="main-nav__item"><a href="form.html">Вязание на заказ</a></li>
-          <li class="main-nav__item"><a href="">Поиск по сайту</a></li>
-          <li class="main-nav__item"><a href="">Корзина: пока пуста</a></li>
-        </ul>
+        <div class="main-nav__item main-nav__item--logo"><a href=""><img src="img/logo-mobile.svg" width="86" height="35" alt="Мишка"></a><button class="main-nav__nav-toggle" type="button">Открыть меню</button></div>
+        <div class="main-nav__items">
+          <div class="main-nav__item"><a href="catalog.html">Каталог товаров</a></div>
+          <div class="main-nav__item"><a href="form.html">Вязание на заказ</a></div>
+        </div>
+        <div class="main-nav__item"><a href="">Поиск по сайту</a></div>
+        <div class="main-nav__item"><a href="">Корзина: пока пуста</a></div>
+        <div class="main-nav__new-items">
+          <div class="main-nav__item"><a href="">Новые поступления</a></div>
+          <div class="main-nav__item"><a href="">Распродажа</a></div>
+        </div>
       </nav>
+      <span class="main-nav__delivery">Бесплатная доставка по России</span>
     </header>
     <section class="page-title">
       <h2 class="page-title__title">Каталог товаров</h2>
@@ -28,38 +30,47 @@
       <ul class="catalog__items">
         <li class="catalog__item product">
           <img src="img/photo-1-mobile@1x.jpg" alt="Зайчик-попрыгайчик" class="product__img">
-          <h3 class="product__title">Зайчик-попрыгайчик</h3>
-          <p class="product__description">Рост 30 см, вес 200 г</p>
-          <span class="product__price">1 200 руб.</span>
-          <button class="product__buy">Купить</button>
+          <div class="product__box">
+            <h3 class="product__title">Зайчик-попрыгайчик</h3>
+            <p class="product__description">Рост 30 см, вес 200 г</p>
+            <span class="product__price">1 200 руб.</span>
+            <button class="product__buy">Купить</button>
+          </div>
         </li>
         <li class="catalog__item product">
           <img src="img/photo-2-mobile@1x.jpg" alt="Корзинка для белья" class="product__img">
-          <h3 class="product__title">Корзинка для белья</h3>
-          <p class="product__description">Диаметр 15 см, высота 10 см</p>
-          <span class="product__price">690 руб.</span>
-          <button class="product__buy">Купить</button>
+          <div class="product__box">
+            <h3 class="product__title">Корзинка для белья</h3>
+            <p class="product__description">Диаметр 15 см, высота 10 см</p>
+            <span class="product__price">690 руб.</span>
+            <button class="product__buy">Купить</button>
+          </div>
         </li>
         <li class="catalog__item product">
           <img src="img/photo-3-mobile@1x.jpg" alt="Большая корзинка для игрушек" class="product__img">
-          <h3 class="product__title">Большая корзинка для игрушек</h3>
-          <p class="product__description">Диаметр 30 см, высота 30 см</p>
-          <span class="product__price">1 500 руб.</span>
-          <button class="product__buy">Купить</button>
+          <div class="product__box">
+            <h3 class="product__title">Большая корзинка для игрушек</h3>
+            <p class="product__description">Диаметр 30 см, высота 30 см</p>
+            <span class="product__price">1 500 руб.</span>
+            <button class="product__buy">Купить</button>
+          </div>
         </li>
       </ul>
     </section>
     <section class="manufacturing">
+      <div class="manufacturing__video">
+        <button class="manufacturing__play-video">Воспроизвести</button>
+      </div>
       <div class="manufacturing__container">
         <h3 class="manufacturing__title">Процесс производства</h3>
-        <div class="manufacturing__video">
-          <button class="manufacturing__play-video">Воспроизвести</button>
-        </div>
         <p class="manufacturing__about">По просьбам наших любимых фолловеров мы сняли для вас подробное видео о том, как появляются наши товары.</p>
         <button class="manufacturing__make-order btn">Сделать заказ</button>
       </div>
     </section>
     <footer class="page-footer">
+      <p class="page-footer__logo">
+        <img src="" alt="Мишка">
+      </p>
       <p class="page-footer__social">
         <span class="social-links">
           <a class="social-links__link social-links__link--in" href="">Мы в Инстаграме</a>
@@ -69,7 +80,7 @@
       </p>
       <p class="page-footer__copyright">
         Разработано
-        <a class="btn page-footer__copyright-link" href=""><img src="" alt="">HTML Academy</a>
+        <a class="page-footer__copyright-link" href=""><img src="" alt="HTML Academy">HTML Academy</a>
       </p>
     </footer>
     <div class="pop-up">
