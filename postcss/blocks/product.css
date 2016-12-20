@@ -1,90 +1,111 @@
 .product {
+  display: flex;
+  flex-direction: column;
+  box-sizing: border-box;
   font-family: "Open Sans";
   color: #000000;
   background-color: #fff;
 
-  outline: 1px solid #ececec;
+   @media ($(tablet-widths)) {
+     flex-direction: row;
+   }
 
-  &::after {
-   content: "";
-   display: table;
-   clear: both;
- }
+   @media ($(desktop-widths)) {
+     flex-direction: column;
+     width: 316px;
 
- @media ($(desktop-widths)) {
-   width: 316px;
-   box-sizing: border-box;
- }
-
+   }
 }
 
 .product__img {
-  margin-bottom: 31px;
+  display: block;
 
   @media ($(tablet-widths)) {
-    float: left;
     width: 50%;
-    box-sizing: border-box;
-
+    height: 334px;
   }
 
   @media ($(desktop-widths)) {
-    float: none;
-    width: auto;
+    width: 100%;
   }
 }
 
 .product__box {
-  @mixin clearfix;
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 30px;
+  box-sizing: border-box;
+  border: 1px solid #ececec;
 
   @media ($(tablet-widths)) {
-    float: right;
     width: 50%;
-    box-sizing: border-box;
+
   }
 
   @media ($(desktop-widths)) {
-    float: none;
-    width: auto;
+    width: 100%;
+    flex-grow: 1;
   }
 }
 
 .product__title {
+  width: 100%;
+  box-sizing: border-box;
   margin: 0;
-  padding-left: 28px;
-  padding-right: 28px;
-
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+
+  @media ($(tablet-widths)) {
+    font-size: 20px;
+  }
+
+  @media ($(desktop-widths)) {
+
+  }
 }
 
 .product__description {
+  width: 100%;
+  box-sizing: border-box;
   margin: 0;
-  padding-left: 28px;
-  padding-right: 28px;
-
   font-size: 13px;
   font-weight: 400;
   line-height: 30px;
   color: #444444;
+
+  @media ($(tablet-widths)) {
+    font-size: 15px;
+  }
+
+  @media ($(desktop-widths)) {
+    margin-bottom: auto;
+  }
+}
+
+.product__order {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .product__price {
-  float: left;
-  padding-left: 28px;
-  padding-right: 28px;
-
   font-size: 15px;
   font-weight: 700;
   line-height: 24px;
+
+  @media ($(tablet-widths)) {
+    font-size: 17px;
+  }
+
+  @media ($(desktop-widths)) {
+
+  }
 }
 
 .product__buy {
-  float: right;
-  padding: 0;
-  padding-right: 28px;
-  margin-bottom: 30px;
   background-color: transparent;
   border: none;
   outline: none;

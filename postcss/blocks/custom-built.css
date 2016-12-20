@@ -1,13 +1,16 @@
 .custom-built {
-  padding: 30px;
   font-family: "Open Sans";
   color: #000000;
   background-color: #fff;
 
+  @mixin container-w-padding;
+
 }
 
 .custom-built__order-form {
-  @mixin clearfix;
+  display: flex;
+  flex-direction: column;
+
 
 }
 
@@ -19,6 +22,14 @@
   font-weight: 400;
   line-height: 24px;
   color: #444444;
+
+  @media ($(tablet-widths)) {
+    font-size: 17px;
+    line-height: 30px;
+  }
+
+  @media ($(desktop-widths)) {
+  }
 }
 
 .custom-built__fieldset {
@@ -27,6 +38,15 @@
   padding-bottom: 8px;
   border: none;
   outline: none;
+  display: flex;
+  flex-direction: column;
+
+  @media ($(tablet-widths)) {
+    flex-direction: row;
+  }
+
+  @media ($(desktop-widths)) {
+  }
 }
 
 .custom-built__title {
@@ -40,9 +60,8 @@
   text-transform: uppercase;
 
   @media ($(tablet-widths)) {
-    display: inline-block;
-    vertical-align: top;
     width: 150px;
+    margin-bottom: 0px;
   }
   @media ($(desktop-widths)) {
   }
@@ -50,13 +69,24 @@
 }
 
 .custom-built__items {
+  display: flex;
+  flex-direction: column;;
+
   @media ($(tablet-widths)) {
-    display: inline-block;
-    vertical-align: top;
     width: 500px;
   }
   @media ($(desktop-widths)) {
     width: 870px;
+  }
+
+  &--color {
+    @media ($(tablet-widths)) {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+    }
+    @media ($(desktop-widths)) {
+    }
   }
 }
 
@@ -70,8 +100,7 @@
 
   &--color {
     @media ($(tablet-widths)) {
-      display: inline-block;
-      vertical-align: top;
+
       width: 240px;
     }
     @media ($(desktop-widths)) {
@@ -80,11 +109,27 @@
   }
 }
 
-.custom-built__required {
+.custom-built__footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+
   @media ($(tablet-widths)) {
-    display: inline-block;
-    float: right;
-    vertical-align: middle;
+    flex-direction: row;
+    align-items: center;
+  }
+  @media ($(desktop-widths)) {
+
+  }
+}
+
+.custom-built__required {
+  margin: 0px;
+  margin-bottom: 30px;
+
+  @media ($(tablet-widths)) {
+    margin-bottom: 0;
+    order: 2;
 
   }
   @media ($(desktop-widths)) {
@@ -94,10 +139,7 @@
 
 .custom-built__send-order {
   @media ($(tablet-widths)) {
-    display: inline-block;
-    float: left;
-    vertical-align: middle;
-    width: auto;
+    width: 230px;
 
   }
   @media ($(desktop-widths)) {

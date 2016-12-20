@@ -1,23 +1,50 @@
 .week-best {
-  background-color: #fff;
+  display: flex;
+  flex-direction: column;
   padding: 30px;
+  background-color: #fff;
   font-family: "Open Sans";
   color: #000000;
 
+  @mixin container-w-padding;
+
   @media ($(tablet-widths)) {
-    @mixin clearfix;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    align-content: flex-start;
+    padding: 0px;
   }
 
   @media ($(desktop-widths)) {
-    @mixin clearfix;
+    margin-top: 70px;
+  }
+}
+
+.week-best__header {
+  display: flex;
+  flex-direction: column;
+
+  @media ($(tablet-widths)) {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 30px;
+    margin-bottom: 55px;
+  }
+
+  @media ($(desktop-widths)) {
+    justify-content: flex-start;
+    position: relative;
+    z-index: 10;
   }
 }
 
 .week-best__product-name {
-  width: 50%;
   margin: 0;
   margin-bottom: 8px;
-  padding-left: 2px;
 
   font-size: 25px;
   font-weight: 700;
@@ -25,17 +52,19 @@
   color: #000000;
 
   @media ($(tablet-widths)) {
-    display: inline-block;
+    margin-bottom: 0px;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   @media ($(desktop-widths)) {
-    display: inline-block;
+    font-size: 53px;
+    line-height: 57px;
   }
 }
 
 .week-best__title {
-  margin-bottom: 30px;
-
+  display: block;
   font-size: 17px;
   font-weight: 700;
   line-height: 17px;
@@ -43,19 +72,14 @@
   text-transform: uppercase;
 
   @media ($(tablet-widths)) {
-    display: inline-block;
+    width: 105px;
+    text-align: center;
   }
 
   @media ($(desktop-widths)) {
-    display: inline-block;
-    float: left;
-  }
-}
-
-.week-best__header {
-  @media ($(desktop-widths)) {
-    @mixin clearfix;
-
+    order: -1;
+    margin-left: 30px;
+    margin-right: 40px;
   }
 }
 
@@ -71,19 +95,20 @@
 }
 
 .week-best__stats-table {
-  margin-bottom: 28px;
 }
 
 .week-best__picture {
   display: block;
 
   @media ($(tablet-widths)) {
+    flex-shrink: 0;
     width: 50%;
-    float: right;
+    box-sizing: border-box;
+
   }
 
   @media ($(desktop-widths)) {
-    float: right;
+    margin-top: -170px;
   }
 }
 
@@ -105,27 +130,29 @@
 .week-best__body {
 
   @media ($(tablet-widths)) {
-    float: left;
     width: 50%;
     box-sizing: border-box;
+    margin-bottom: 113px;
+    padding-right: 50px;
+
   }
 
   @media ($(desktop-widths)) {
-    float: left;
-    width: 50%;
-    box-sizing: border-box;
+    padding-left: 175px;
   }
 }
 
 .week-best__order {
 
   @media ($(tablet-widths)) {
-    float: left;
     width: 50%;
     box-sizing: border-box;
+    margin-top: -113px;
+    padding-right: 50px;
+
   }
 
   @media ($(desktop-widths)) {
-
+    padding-left: 175px;
   }
 }
