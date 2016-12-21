@@ -1,15 +1,39 @@
 .manufacturing {
-  padding: 30px;
-  padding-top: 0px;
   font-family: "Open Sans";
   color: #000000;
   background-color: #fff;
+  padding-bottom: 58px;
+
+  @media ($(tablet-widths)) {
+    padding-bottom: 63px;
+  }
+
+  @media ($(desktop-widths)) {
+    padding-bottom: 105px;
+  }
+
+  @mixin container-w-padding;
 }
 
 .manufacturing__container {
-  padding-top: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-sizing: border-box;
   padding-bottom: 30px;
-  outline: 1px solid #ececec;
+  border: 1px solid #ececec;
+
+  @media ($(tablet-widths)) {
+    align-items: stretch;
+  }
+
+  @media ($(desktop-widths)) {
+    flex-direction: row-reverse;
+    flex-wrap: wrap;
+    align-items: flex-start;
+    padding-bottom: 0px;
+  }
+
 }
 
 .manufacturing__title {
@@ -20,10 +44,56 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
+
+  @media ($(tablet-widths)) {
+  }
+
+  @media ($(desktop-widths)) {
+    order: -3;
+    width: 366px;
+    box-sizing: border-box;
+    margin-bottom: 296px;
+  }
+}
+
+.manufacturing__video {
+  width: 260px;
+  height: 150px;
+  background-image: url("../img/video-mobile@1x.jpg");
+  background-repeat: no-repeat;
+  background-size: 100%;
+
+  @media ($(tablet-widths)) {
+    width: 668px;
+    height: 455px;
+    order: -1;
+  }
+
+  @media ($(desktop-widths)) {
+    width: 682px;
+    height: 455px;
+  }
+}
+
+.manufacturing__holder {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  @media ($(desktop-widths)) {
+    padding: 0px;
+    width: 366px;
+    box-sizing: border-box;
+    margin-top: -296px;
+    padding-left: 80px;
+    padding-right: 57px;
+    padding-bottom: 60px;
+  }
 }
 
 .manufacturing__about {
-  margin: 0;
+  width: 192px;
+  margin-top: 34px;
   margin-bottom: 30px;
   padding-left: 34px;
   padding-right: 34px;
@@ -32,4 +102,31 @@
   font-weight: 400;
   line-height: 24px;
   color: #444444;
+
+  @media ($(tablet-widths)) {
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  @media ($(desktop-widths)) {
+    padding: 0px;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 30px;
+  }
+}
+
+.manufacturing__make-order {
+  width: 192px;
+
+  @media ($(tablet-widths)) {
+    width: 586px;
+    align-self: center;
+  }
+
+  @media ($(desktop-widths)) {
+    width: 230px;
+  }
 }

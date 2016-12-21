@@ -1,9 +1,33 @@
 .reviews {
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   padding: 30px;
   font-family: "Open Sans";
   font-size: 0;
   color: #000000;
+
+  @mixin container-w-padding;
+
+  @media ($(tablet-widths)) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    padding-top: 79px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 50px center;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
+  }
+
+  @media ($(desktop-widths)) {
+    padding-left: 225px;
+    width: 875px;
+  }
 }
 
 .reviews__title {
@@ -13,6 +37,16 @@
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
+
+  @media ($(tablet-widths)) {
+    order: -2;
+    margin-bottom: 0px;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media ($(desktop-widths)) {
+  }
 }
 
 .reviews__item {
@@ -29,19 +63,45 @@
   font-weight: 400;
   line-height: 30px;
   color: #444444;
+
+  @media ($(tablet-widths)) {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 40px;
+    font-size: 17px;
+  }
+
+  @media ($(desktop-widths)) {
+  }
 }
 
 .reviews__author-name {
+  display: block;
   font-size: 18px;
   font-weight: 700;
   line-height: 24px;
   font-style: normal;
+
+  @media ($(tablet-widths)) {
+    font-size: 17px;
+  }
+
+  @media ($(desktop-widths)) {
+  }
 }
 
 .reviews__author-link {
+  display: block;
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+
+  @media ($(tablet-widths)) {
+    font-size: 17px;
+  }
+
+  @media ($(desktop-widths)) {
+  }
 }
 
 .reviews__slider-button {
@@ -49,4 +109,39 @@
   vertical-align: bottom;
   width: 50%;
   margin-bottom: 38px;
+
+  @media ($(tablet-widths)) {
+    margin-bottom: 0px;
+    width: 100px;
+  }
+
+  @media ($(desktop-widths)) {
+    width: 100px;
+  }
+}
+
+.reviews__slider {
+  @media ($(tablet-widths)) {
+  }
+
+  @media ($(desktop-widths)) {
+  }
+}
+
+.reviews__write-button {
+  @media ($(tablet-widths)) {
+    order: -1;
+    width: auto;
+  }
+
+  @media ($(desktop-widths)) {
+  }
+}
+
+.reviews__author {
+  @media ($(tablet-widths)) {
+  }
+
+  @media ($(desktop-widths)) {
+  }
 }

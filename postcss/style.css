@@ -1,3 +1,6 @@
+@import "variables.css";
+@import "mixins.css";
+
 @import "global/fonts.css";
 @import "global/normalize.css";
 
@@ -19,3 +22,8 @@
 @import "blocks/reviews.css";
 @import "blocks/social-links.css";
 @import "blocks/week-best.css";
+
+
+img {
+  display: block;
+}

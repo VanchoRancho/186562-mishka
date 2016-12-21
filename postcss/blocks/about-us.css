@@ -3,25 +3,108 @@
   padding: 30px;
   font-family: "Open Sans";
   color: #000000;
+
+  @mixin container-w-padding;
 }
 
 .about-us__title {
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
+  margin: 0px;
+
+  @media ($(tablet-widths)) {
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media ($(desktop-widths)) {
+    padding-left: 175px;
+    font-size: 53px;
+    line-height: 57px;
+  }
 }
 
 .about-us__items {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
+
+  @media ($(tablet-widths)) {
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+
+  @media ($(desktop-widths)) {
+  }
 }
 
+
+
 .about-us__item {
-  padding-top: 60px;
-  padding-bottom: 16px;
+  padding-top: 76px;
 
   font-size: 17px;
   font-weight: 700;
-  line-height: 17px;
+  line-height: 19px;
+
+  @media ($(tablet-widths)) {
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 35px;
+    font-size: 20px;
+    line-height: 22px;
+
+    &--eco {
+      order: 1;
+    }
+
+    &--price {
+      order: 3;
+    }
+
+    &--likes {
+      order: 5;
+    }
+
+    &--handmade {
+      order: 2;
+    }
+
+    &--russian {
+      order: 4;
+    }
+
+    &--giftbox {
+      order: 6;
+    }
+  }
+
+  @media ($(desktop-widths)) {
+    &--eco {
+      padding-left: 175px;
+    }
+
+    &--price {
+      padding-left: 175px;
+    }
+
+    &--likes {
+      padding-left: 175px;
+    }
+
+    &--handmade {
+      padding-right: 175px;
+    }
+
+    &--russian {
+      padding-right: 175px;
+    }
+
+    &--giftbox {
+      padding-right: 175px;
+    }
+  }
 }

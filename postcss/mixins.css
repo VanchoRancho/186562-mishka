@@ -1,0 +1,44 @@
+@define-mixin container {
+  width: 320px;
+  margin: 0 auto;
+
+  @media ($(tablet-widths)) {
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media ($(desktop-widths)) {
+    width: 1050px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@define-mixin container-w-padding {
+  width: 260px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+
+  @media ($(tablet-widths)) {
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media ($(desktop-widths)) {
+    width: 1050px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@define-mixin clearfix {
+
+  &::after {
+  content: "";
+  display: table;
+  clear: both;
+  }
+}

@@ -1,15 +1,39 @@
+.catalog-nav {
+  background-color: #f8f8f8;
+}
+
 .catalog-nav__items {
+  display: flex;
+  flex-direction: column;
   list-style: none;
   margin: 0;
   padding: 0;
+  font-size: 0;
+  line-height: 0;
+
+  @media ($(tablet-widths)) {
+    flex-direction: row;
+  }
+
+  @mixin container;
+
 }
 
 .catalog-nav__item  {
+  width: 100%;
   background-color: #63d1bb;
+
+  @media ($(tablet-widths)) {
+    width: 50%;
+  }
+
+  @media ($(desktop-widths)) {
+  }
 
   &--right-green {
     background-color: #56c3b2;
   }
+
 }
 
 .catalog-nav__item  a {
@@ -24,4 +48,16 @@
   font-family: "Open Sans";
   color: #fff;
   text-decoration: none;
+
+  @media ($(tablet-widths)) {
+    font-size: 20px;
+    line-height: 30px;
+    padding-top: 29px;
+    padding-bottom: 30px;
+    padding-left: 36px;
+  }
+
+  @media ($(desktop-widths)) {
+    padding-right: 350px;
+  }
 }
