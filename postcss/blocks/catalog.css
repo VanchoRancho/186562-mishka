@@ -6,12 +6,23 @@
   list-style: none;
   margin: 0;
   padding: 30px;
+
+  @media ($(tablet-widths)) {
+    @mixin container;
+  }
 }
 
 .catalog__item {
   margin-bottom: 30px;
+
+  @media ($(desktop-widths)) {
+    display: inline-block;
+    vertical-align: top;
+    margin-right: 45px;
+  }
 }
 
 .catalog__item:last-child {
   margin-bottom: 0px;
+  margin-right: 0px;
 }

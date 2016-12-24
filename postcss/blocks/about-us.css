@@ -3,19 +3,54 @@
   padding: 30px;
   font-family: "Open Sans";
   color: #000000;
+
+  @mixin clearfix;
+
+
+  @media ($(tablet-widths)) {
+    @mixin container;
+  }
 }
 
 .about-us__title {
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
+  @media ($(desktop-widths)) {
+    padding-left: 175px;
+
+  }
 }
 
 .about-us__items {
   list-style: none;
   margin: 0;
   padding: 0;
+
+  &--left {
+    @media ($(tablet-widths)) {
+      display: inline-block;
+    }
+
+    @media ($(desktop-widths)) {
+      margin-right: 50px;
+      padding-left: 175px;
+
+    }
+  }
+
+  &--right {
+    @media ($(tablet-widths)) {
+      display: inline-block;
+    }
+
+    @media ($(desktop-widths)) {
+      display: inline-block;
+    }
+  }
 }
+
+
 
 .about-us__item {
   padding-top: 60px;
@@ -24,4 +59,12 @@
   font-size: 17px;
   font-weight: 700;
   line-height: 17px;
+
+  @media ($(tablet-widths)) {
+    width: 300px;
+  }
+
+  @media ($(desktop-widths)) {
+    width: 300px;
+  }
 }

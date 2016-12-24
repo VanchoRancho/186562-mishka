@@ -3,6 +3,16 @@
   padding: 30px;
   font-family: "Open Sans";
   color: #000000;
+
+  @media ($(tablet-widths)) {
+    @mixin clearfix;
+    @mixin container;
+  }
+
+  @media ($(desktop-widths)) {
+    @mixin clearfix;
+    padding-top: 150px;
+  }
 }
 
 .week-best__product-name {
@@ -14,6 +24,18 @@
   font-weight: 700;
   line-height: 30px;
   color: #000000;
+
+  @media ($(tablet-widths)) {
+    display: inline-block;
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+
+  @media ($(desktop-widths)) {
+    display: inline-block;
+    margin-left: 70px;
+  }
 }
 
 .week-best__title {
@@ -24,6 +46,25 @@
   line-height: 17px;
   color: #63d1bb;
   text-transform: uppercase;
+
+  @media ($(tablet-widths)) {
+    display: inline-block;
+    width: 100px;
+    float: right;
+
+  }
+
+  @media ($(desktop-widths)) {
+    display: inline-block;
+    float: left;
+  }
+}
+
+.week-best__header {
+  @media ($(tablet-widths)) {
+    @mixin clearfix;
+
+  }
 }
 
 .week-best__description {
@@ -34,6 +75,7 @@
   font-weight: 400;
   line-height: 24px;
   color: #444444;
+
 }
 
 .week-best__stats-table {
@@ -41,7 +83,17 @@
 }
 
 .week-best__picture {
-  margin-bottom: 29px;
+  display: block;
+
+  @media ($(tablet-widths)) {
+    width: 50%;
+    float: right;
+  }
+
+  @media ($(desktop-widths)) {
+    float: right;
+    margin-top: -120px;
+  }
 }
 
 .week-best__product-price {
@@ -53,4 +105,45 @@
   line-height: 24px;
   color: #444444;
   text-align: center;
+}
+
+.week-best__order-button {
+
+}
+
+.week-best__body {
+
+  @media ($(tablet-widths)) {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 77px;
+    padding-right: 44px;
+
+  }
+
+  @media ($(desktop-widths)) {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding-left: 175px;
+    margin-bottom: 186px;
+
+  }
+}
+
+.week-best__order {
+
+  @media ($(tablet-widths)) {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    padding-right: 44px;
+
+  }
+
+  @media ($(desktop-widths)) {
+    padding-left: 175px;
+
+  }
 }

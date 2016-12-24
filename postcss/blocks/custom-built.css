@@ -3,6 +3,29 @@
   font-family: "Open Sans";
   color: #000000;
   background-color: #fff;
+
+  margin: 0 auto;
+  width: 260px;
+
+  @media ($(tablet-widths)) {
+
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 668px;
+  }
+
+  @media ($(desktop-widths)) {
+
+    padding-left: 110px;
+    padding-right: 200px;
+    width: 840px;
+  }
+
+}
+
+.custom-built__order-form {
+  @mixin clearfix;
+
 }
 
 .custom-built__about {
@@ -13,6 +36,11 @@
   font-weight: 400;
   line-height: 24px;
   color: #444444;
+
+  @media ($(desktop-widths)) {
+
+    padding-left: 150px;
+  }
 }
 
 .custom-built__fieldset {
@@ -24,6 +52,7 @@
 }
 
 .custom-built__title {
+  margin: 0;
   margin-bottom: 23px;
 
   font-size: 16px;
@@ -31,6 +60,26 @@
   line-height: 16px;
   color: #63d1bb;
   text-transform: uppercase;
+
+  @media ($(tablet-widths)) {
+    display: inline-block;
+    vertical-align: top;
+    width: 150px;
+  }
+  @media ($(desktop-widths)) {
+  }
+
+}
+
+.custom-built__items {
+  @media ($(tablet-widths)) {
+    display: inline-block;
+    vertical-align: top;
+    width: 500px;
+  }
+  @media ($(desktop-widths)) {
+    width: 500px;
+  }
 }
 
 .custom-built__item {
@@ -40,4 +89,41 @@
   font-weight: 700;
   line-height: 18px;
   color: #000000;
+
+  &--color {
+    @media ($(tablet-widths)) {
+      display: inline-block;
+      vertical-align: top;
+      width: 240px;
+    }
+    @media ($(desktop-widths)) {
+
+    }
+  }
+}
+
+.custom-built__required {
+  @media ($(tablet-widths)) {
+    display: inline-block;
+    float: right;
+    vertical-align: middle;
+
+  }
+  @media ($(desktop-widths)) {
+
+  }
+}
+
+.custom-built__send-order {
+  @media ($(tablet-widths)) {
+    display: inline-block;
+    float: left;
+    vertical-align: middle;
+    width: auto;
+
+  }
+  @media ($(desktop-widths)) {
+    margin-left: 150px;
+
+  }
 }

@@ -1,8 +1,16 @@
 .contacts {
+  position: relative;
   background-color: #fff;
   padding: 30px;
   font-family: "Open Sans";
   color: #000000;
+
+  @media ($(tablet-widths)) {
+    @mixin clearfix;
+    @mixin container-left-padding;
+  }
+
+
 }
 
 .contacts__title {
@@ -12,13 +20,47 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+
+  @media ($(tablet-widths)) {
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+
+  @media ($(desktop-widths)) {
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 57px;
+  }
 }
 
 .contacts__table {
+  display: table;
   margin-bottom: 42px;
   font-size: 15px;
   font-weight: 400;
   line-height: 30px;
+}
+
+.contacts__row {
+  display: table-row;
+
+  @media ($(tablet-widths)) {
+    display: inline-block;
+    vertical-align: top;
+  }
+  @media ($(desktop-widths)) {
+    display: table-row;
+  }
+}
+
+.contacts__field {
+  display: table-cell;
+}
+
+.contacts__value {
+  display: table-cell;
+  width: 180px;
 }
 
 .contacts__map {
@@ -29,5 +71,39 @@
   background-image: url("../img/map-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-position: center top;
-  outline: 1px solid pink;
+
+  @media ($(tablet-widths)) {
+    margin-left: -50px;
+    width: 768px;
+    background-size: 100%;
+  }
+
+  @media ($(desktop-widths)) {
+    float: right;
+    width: 50%;
+    box-sizing: border-box;
+    background-size: 100%;
+  }
+
+}
+
+.contacts__box {
+  @media ($(desktop-widths)) {
+    float: left;
+    width: 50%;
+    box-sizing: border-box;
+    margin-top: 60px;
+    margin-bottom: 70px;
+  }
+
+}
+
+.contacts__mail-to-button {
+  @media ($(tablet-widths)) {
+    width: auto;
+    margin: 0 auto;
+  }
+  @media ($(desktop-widths)) {
+    float: left;
+  }
 }
