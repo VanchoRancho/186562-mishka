@@ -2,6 +2,7 @@
   width: 100%;
   display: block;
   box-sizing: border-box;
+  min-height: 52px;
   padding: 20px;
   padding-top: 15px;
   padding-bottom: 16px;
@@ -24,8 +25,27 @@
     background-color: #444444;
   }
 
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
   &--arrow {
-    font-size: 0;
+    background-color: transparent;
+    padding: 0;
     border: 1px solid #ececec;
+
+    &:hover {
+      background-color: transparent;
+
+      & .btn__arrow-icon polygon {
+        fill: rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    &:active {
+      & .btn__arrow-icon polygon {
+        fill: rgba(0, 0, 0, 0.3);
+      }
+    }
   }
 }

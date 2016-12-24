@@ -3,6 +3,7 @@
   flex-direction: column;
   padding: 30px;
   padding-bottom: 35px;
+  padding-top: 27px;
   background-color: #fff;
   font-family: "Open Sans";
   color: #000000;
@@ -15,6 +16,7 @@
     align-items: flex-start;
     align-content: flex-start;
     padding: 0px;
+    padding-top: 20px;
     padding-bottom: 52px;
   }
 
@@ -29,14 +31,14 @@
   flex-direction: column;
   margin-bottom: 25px;
 
+
   @media ($(tablet-widths)) {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
     width: 100%;
     box-sizing: border-box;
-    margin-top: 30px;
-    margin-bottom: 55px;
+    margin-bottom: 50px;
   }
 
   @media ($(desktop-widths)) {
@@ -48,7 +50,7 @@
 
 .week-best__product-name {
   margin: 0;
-  margin-bottom: 8px;
+  margin-bottom: 5px;
 
   font-size: 25px;
   font-weight: 700;
@@ -76,6 +78,8 @@
   text-transform: uppercase;
 
   @media ($(tablet-widths)) {
+    margin-top: 5px;
+    margin-right: 11px;
     width: 105px;
     text-align: center;
   }
@@ -89,7 +93,7 @@
 
 .week-best__description {
   margin: 0;
-  margin-bottom: 34px;
+  margin-bottom: 17px;
 
   font-size: 15px;
   font-weight: 400;
@@ -99,6 +103,11 @@
   @media ($(tablet-widths)) {
     font-size: 17px;
     line-height: 30px;
+    margin-bottom: 34px;
+  }
+
+  @media ($(desktop-widths)) {
+    margin-bottom: 44px;
   }
 }
 
@@ -109,6 +118,10 @@
   font-weight: 400;
   line-height: 20px;
   color: #444444;
+
+  @media ($(tablet-widths)) {
+    width: 100%;
+  }
 }
 
 .week-best__field {
@@ -117,6 +130,11 @@
   padding-right: 31px;
   padding-top: 10px;
   border-bottom: 1px solid #ececec;
+
+  @media ($(tablet-widths)) {
+    width: 90px;
+    padding-right: 5px;
+  }
 }
 
 .week-best__value {
@@ -127,24 +145,25 @@
 }
 
 .week-best__img-wrapper {
-  margin-bottom: 25px;
+  margin-bottom: 23px;
 
   @media ($(tablet-widths)) {
     flex-shrink: 0;
     width: 50%;
     box-sizing: border-box;
     margin-bottom: 0px;
+    margin-top: 7px;
 
   }
 
   @media ($(desktop-widths)) {
-    margin-top: -170px;
+    margin-top: -160px;
   }
 }
 
 .week-best__product-price {
   display: block;
-  margin-bottom: 28px;
+  margin-bottom: 26px;
 
   font-size: 17px;
   font-weight: 700;
@@ -169,12 +188,14 @@
     width: 50%;
     box-sizing: border-box;
     margin-bottom: 110px;
-    padding-right: 50px;
+    padding-right: 44px;
 
   }
 
   @media ($(desktop-widths)) {
     padding-left: 175px;
+    padding-right: 58px;
+
   }
 }
 
@@ -184,11 +205,13 @@
     width: 50%;
     box-sizing: border-box;
     margin-top: -110px;
-    padding-right: 50px;
+    padding-right: 44px;
 
   }
 
   @media ($(desktop-widths)) {
     padding-left: 175px;
+    padding-right: 58px;
+
   }
 }

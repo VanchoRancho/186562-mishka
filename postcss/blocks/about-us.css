@@ -1,10 +1,19 @@
 .about-us {
   background-color: #fff;
   padding: 30px;
+  padding-top: 27px;
   font-family: "Open Sans";
   color: #000000;
 
   @mixin container-w-padding;
+
+  @media ($(tablet-widths)) {
+    padding-top: 51px;
+  }
+
+  @media ($(desktop-widths)) {
+    padding-top: 60px;
+  }
 }
 
 .about-us__title {
@@ -16,6 +25,7 @@
   @media ($(tablet-widths)) {
     font-size: 43px;
     line-height: 50px;
+    margin-bottom: 18px;
   }
 
   @media ($(desktop-widths)) {
@@ -35,16 +45,19 @@
   @media ($(tablet-widths)) {
     flex-direction: row;
     flex-wrap: wrap;
+
   }
 
   @media ($(desktop-widths)) {
+    padding-left: 175px;
+
   }
 }
 
 
 
 .about-us__item {
-  padding-top: 76px;
+  padding-top: 85px;
 
   font-size: 17px;
   font-weight: 700;
@@ -53,28 +66,38 @@
   &--eco {
     background-image: url("../img/icon-feature-1.svg");
     background-repeat: no-repeat;
-    background-position: 10px 10px;
+    background-position: 7px 30px;
 
   }
 
   &--price {
-    order: 3;
+    background-image: url("../img/icon-feature-3.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 32px;
   }
 
   &--likes {
-    order: 5;
+    background-image: url("../img/icon-feature-5.svg");
+    background-repeat: no-repeat;
+    background-position: 7px 37px;
   }
 
   &--handmade {
-    order: 2;
+    background-image: url("../img/icon-feature-2.svg");
+    background-repeat: no-repeat;
+    background-position: 4px 36px;
   }
 
   &--russian {
-    order: 4;
+    background-image: url("../img/icon-feature-4.svg");
+    background-repeat: no-repeat;
+    background-position: 0px 36px;
   }
 
   &--giftbox {
-    order: 6;
+    background-image: url("../img/icon-feature-6.svg");
+    background-repeat: no-repeat;
+    background-position: 3px 34px;
   }
 
   @media ($(tablet-widths)) {
@@ -83,6 +106,7 @@
     padding-right: 35px;
     font-size: 20px;
     line-height: 22px;
+    margin-bottom: 26px;
 
     &--eco {
       order: 1;
@@ -110,28 +134,6 @@
   }
 
   @media ($(desktop-widths)) {
-    &--eco {
-      padding-left: 175px;
-    }
-
-    &--price {
-      padding-left: 175px;
-    }
-
-    &--likes {
-      padding-left: 175px;
-    }
-
-    &--handmade {
-      padding-right: 175px;
-    }
-
-    &--russian {
-      padding-right: 175px;
-    }
-
-    &--giftbox {
-      padding-right: 175px;
-    }
+    width:350px;
   }
 }

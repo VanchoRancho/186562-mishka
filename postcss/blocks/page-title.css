@@ -15,8 +15,8 @@
     }
 
     @media ($(tablet-widths)) {
-      padding-top: 156px;
-      padding-bottom: 371px;
+      padding-top: 152px;
+      padding-bottom: 374px;
       background-image: url("../img/hero-desktop@1x.jpg");
       background-position: center top;
 
@@ -26,7 +26,7 @@
     }
 
     @media ($(desktop-widths)) {
-      padding-bottom: 357px;
+      padding-bottom: 359px;
     }
   }
 }

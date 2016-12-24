@@ -13,6 +13,7 @@
   @media ($(tablet-widths)) {
     flex-direction: row;
     justify-content: space-between;
+    align-items: center;
   }
 }
 
@@ -25,9 +26,11 @@
 
   @media ($(tablet-widths)) {
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
-    min-height: 80px;
+    min-height: 143px;
+    width: 220px;
+
   }
 }
 
@@ -55,18 +58,27 @@
 
   @media ($(tablet-widths)) {
     border-bottom: none;
+    min-height: 143px;
+    width: 220px;
+
+
   }
 }
 
 .page-footer__copyright {
   margin: 0;
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
   align-items: center;
   min-height: 80px;
   font-size: 19px;
   font-weight: 700;
   line-height: 19px;
+
+  @media ($(tablet-widths)) {
+    min-height: 143px;
+    width: 220px;
+  }
 }
 
 .page-footer__copyright-link {
