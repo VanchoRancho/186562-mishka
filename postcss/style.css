@@ -22,7 +22,7 @@
 @import "blocks/reviews.css";
 @import "blocks/social-links.css";
 @import "blocks/week-best.css";
-
+@import "blocks/zigzag-wrapper.css";
 
 img {
   display: block;

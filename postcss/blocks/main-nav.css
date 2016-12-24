@@ -17,9 +17,6 @@
     flex-wrap: wrap;
     height: 88px;
   }
-
-  @media ($(desktop-widths)) {
-  }
 }
 
 

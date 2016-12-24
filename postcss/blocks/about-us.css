@@ -50,6 +50,33 @@
   font-weight: 700;
   line-height: 19px;
 
+  &--eco {
+    background-image: url("../img/icon-feature-1.svg");
+    background-repeat: no-repeat;
+    background-position: 10px 10px;
+
+  }
+
+  &--price {
+    order: 3;
+  }
+
+  &--likes {
+    order: 5;
+  }
+
+  &--handmade {
+    order: 2;
+  }
+
+  &--russian {
+    order: 4;
+  }
+
+  &--giftbox {
+    order: 6;
+  }
+
   @media ($(tablet-widths)) {
     width: 50%;
     box-sizing: border-box;
