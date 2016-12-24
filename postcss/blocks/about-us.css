@@ -5,12 +5,21 @@
   color: #000000;
 
   @mixin clearfix;
+
+
+  @media ($(tablet-widths)) {
+    @mixin container;
+  }
 }
 
 .about-us__title {
   font-size: 25px;
   font-weight: 700;
   line-height: 30px;
+  @media ($(desktop-widths)) {
+    padding-left: 175px;
+
+  }
 }
 
 .about-us__items {
@@ -20,21 +29,23 @@
 
   &--left {
     @media ($(tablet-widths)) {
-      float: left;
+      display: inline-block;
     }
 
     @media ($(desktop-widths)) {
-      float: left;
+      margin-right: 50px;
+      padding-left: 175px;
+
     }
   }
 
   &--right {
     @media ($(tablet-widths)) {
-      float: right;
+      display: inline-block;
     }
 
     @media ($(desktop-widths)) {
-      float: right;
+      display: inline-block;
     }
   }
 }

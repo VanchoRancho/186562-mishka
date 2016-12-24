@@ -3,11 +3,23 @@
   font-family: "Open Sans";
   color: #000000;
 
+  padding-top: 25px;
+  padding-bottom: 25px;
+
   @media ($(tablet-widths)) {
     line-height: 0;
     font-size: 0;
+    padding-top: 25px;
+    padding-bottom: 25px;
   }
 
+}
+
+.page-footer__wrapper {
+  @media ($(tablet-widths)) {
+    @mixin container;
+    text-align: center;
+  }
 }
 
 .page-footer__logo {
@@ -15,17 +27,29 @@
   margin: 0;
 
   @media ($(tablet-widths)) {
+    text-align: left;
     display: inline-block;
-    width: 256px;
+    width: 220px;
+  }
+
+  @media ($(desktop-widths)) {
+    display: inline-block;
+    width: 350px;
   }
 }
 
 .page-footer__social {
   margin: 0;
+  text-align: center;
 
   @media ($(tablet-widths)) {
     display: inline-block;
-    width: 256px;
+    width: 220px;
+  }
+
+  @media ($(desktop-widths)) {
+    display: inline-block;
+    width: 350px;
   }
 }
 
@@ -34,9 +58,16 @@
   font-size: 19px;
   font-weight: 700;
   line-height: 19px;
+  text-align: center;
 
   @media ($(tablet-widths)) {
     display: inline-block;
-    width: 256px;
+    width: 220px;
+    text-align: right;
+  }
+
+  @media ($(desktop-widths)) {
+    display: inline-block;
+    width: 350px;
   }
 }

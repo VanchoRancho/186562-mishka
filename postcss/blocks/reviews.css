@@ -8,6 +8,10 @@
 
   @mixin clearfix;
 
+  @media ($(tablet-widths)) {
+    @mixin container-left-padding;
+  }
+
 }
 
 .reviews__title {
@@ -88,7 +92,7 @@
     width: auto;
     position: absolute;
     top: 30px;
-    right: 30px;
+    right: 50px;
   }
 
   @media ($(desktop-widths)) {

@@ -5,9 +5,12 @@
   font-family: "Open Sans";
   color: #000000;
 
-  @media ($(desktop-widths)) {
-    min-height: 525px;
+  @media ($(tablet-widths)) {
+    @mixin clearfix;
+    @mixin container-left-padding;
   }
+
+
 }
 
 .contacts__title {
@@ -17,6 +20,18 @@
   font-size: 18px;
   font-weight: 700;
   line-height: 30px;
+
+  @media ($(tablet-widths)) {
+    font-size: 43px;
+    font-weight: 700;
+    line-height: 50px;
+  }
+
+  @media ($(desktop-widths)) {
+    font-size: 53px;
+    font-weight: 700;
+    line-height: 57px;
+  }
 }
 
 .contacts__table {
@@ -58,6 +73,7 @@
   background-position: center top;
 
   @media ($(tablet-widths)) {
+    margin-left: -50px;
     width: 768px;
     background-size: 100%;
   }
@@ -76,6 +92,8 @@
     float: left;
     width: 50%;
     box-sizing: border-box;
+    margin-top: 60px;
+    margin-bottom: 70px;
   }
 
 }

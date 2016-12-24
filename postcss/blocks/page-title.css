@@ -2,13 +2,21 @@
   padding-top: 76px;
   padding-bottom: 74px;
   font-family: "Open Sans";
-  background-color: #f1f1f1;
+  background-color: #f9f9f9;
+
+  @media ($(tablet-widths)) {
+    padding-top: 105px;
+  }
 
   &--with-bg {
     padding-bottom: 120px;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;
     background-position: center -17px;
+
+    @media ($(tablet-widths)) {
+      padding-top: 161px;
+    }
   }
 }
 

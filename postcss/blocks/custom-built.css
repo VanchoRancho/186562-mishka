@@ -4,6 +4,23 @@
   color: #000000;
   background-color: #fff;
 
+  margin: 0 auto;
+  width: 260px;
+
+  @media ($(tablet-widths)) {
+
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 668px;
+  }
+
+  @media ($(desktop-widths)) {
+
+    padding-left: 110px;
+    padding-right: 200px;
+    width: 840px;
+  }
+
 }
 
 .custom-built__order-form {
@@ -19,6 +36,11 @@
   font-weight: 400;
   line-height: 24px;
   color: #444444;
+
+  @media ($(desktop-widths)) {
+
+    padding-left: 150px;
+  }
 }
 
 .custom-built__fieldset {
@@ -56,7 +78,7 @@
     width: 500px;
   }
   @media ($(desktop-widths)) {
-    width: 870px;
+    width: 500px;
   }
 }
 
@@ -101,6 +123,7 @@
 
   }
   @media ($(desktop-widths)) {
+    margin-left: 150px;
 
   }
 }
