@@ -3,6 +3,8 @@
   flex-direction: column;
   background-color: #fff;
   padding: 30px;
+  padding-top: 28px;
+  padding-bottom: 43px;
   font-family: "Open Sans";
   font-size: 0;
   color: #000000;
@@ -14,17 +16,30 @@
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
+    padding-top: 104px;
+    padding-bottom: 79px;
+    background-image: url("../img/review@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 0px 27px;
+
+    @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+      background-image: url("../img/review@2x.jpg");
+    }
   }
 
   @media ($(desktop-widths)) {
     padding-left: 225px;
+    padding-top: 106px;
+    padding-bottom: 127px;
     width: 875px;
+    background-position: 50px 33px;
+
   }
 }
 
 .reviews__title {
   margin: 0;
-  margin-bottom: 38px;
+  margin-bottom: 23px;
 
   font-size: 25px;
   font-weight: 700;
@@ -32,12 +47,14 @@
 
   @media ($(tablet-widths)) {
     order: -2;
-    margin-bottom: 0px;
+    margin-bottom: 49px;
     font-size: 43px;
     line-height: 50px;
   }
 
   @media ($(desktop-widths)) {
+    margin-bottom: 52px;
+
   }
 }
 
@@ -49,7 +66,7 @@
 
 .reviews__text {
   margin: 0;
-  margin-bottom: 40px;
+  margin-bottom: 28px;
 
   font-size: 15px;
   font-weight: 400;
@@ -59,11 +76,13 @@
   @media ($(tablet-widths)) {
     width: 100%;
     box-sizing: border-box;
-    margin-top: 40px;
     font-size: 17px;
+    margin-bottom: 56px;
   }
 
   @media ($(desktop-widths)) {
+    padding-right: 80px;
+    margin-bottom: 37px;
   }
 }
 
@@ -76,6 +95,7 @@
 
   @media ($(tablet-widths)) {
     font-size: 17px;
+    margin-bottom: 5px;
   }
 
   @media ($(desktop-widths)) {
@@ -100,20 +120,24 @@
   display: inline-block;
   vertical-align: bottom;
   width: 50%;
-  margin-bottom: 38px;
 
   @media ($(tablet-widths)) {
     margin-bottom: 0px;
-    width: 100px;
+    width: 88px;
+    border: none;
+
   }
 
   @media ($(desktop-widths)) {
-    width: 100px;
+    width: 88px;
   }
 }
 
 .reviews__slider {
+  margin-bottom: 38px;
+
   @media ($(tablet-widths)) {
+    margin-top: 5px;
   }
 
   @media ($(desktop-widths)) {
@@ -123,14 +147,19 @@
 .reviews__write-button {
   @media ($(tablet-widths)) {
     order: -1;
+    align-self: flex-start;
     width: auto;
+    margin-top: 2px;
+    width: 175px;
   }
 
   @media ($(desktop-widths)) {
+    margin-top: 5px;
   }
 }
 
 .reviews__author {
+  margin-bottom: 33px;
   @media ($(tablet-widths)) {
   }
 

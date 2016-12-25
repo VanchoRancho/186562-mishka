@@ -1,0 +1,38 @@
+.zigzag-wrapper {
+  display: block;
+  min-width: 320px;
+  min-height: 6px;
+  background-image: url("../img/bg-zigzag-line.svg");
+  background-repeat: repeat-x;
+  background-size: contain;
+  background-position: left;
+
+  @media ($(tablet-widths)) {
+    min-height: 15px;
+  }
+
+  @media ($(desktop-widths)) {
+    min-height: 23px;
+  }
+
+  &--fill {
+    display: none;
+
+    @media ($(tablet-widths)) {
+      display: block;
+      position: relative;
+      z-index: 100;
+      top: -12px;
+      min-height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+    }
+
+    @media ($(desktop-widths)) {
+      top: -17px;
+      min-height: 34px;
+    }
+  }
+
+}

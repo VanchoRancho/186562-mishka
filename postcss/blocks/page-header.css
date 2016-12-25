@@ -1,8 +1,6 @@
 .page-header {
   @media ($(tablet-widths)) {
-    flex-direction: row;
-    flex-wrap: wrap;
-    height: 88px;
+    border-top: 1px solid #ececec;
     border-bottom: 1px solid #ececec;
-  };
+  }
 }

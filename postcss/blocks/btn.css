@@ -2,6 +2,7 @@
   width: 100%;
   display: block;
   box-sizing: border-box;
+  min-height: 52px;
   padding: 20px;
   padding-top: 15px;
   padding-bottom: 16px;
@@ -18,14 +19,52 @@
   border: 2px solid #444444;
   cursor: pointer;
   outline: none;
+  transition: 0.1s ease-in-out;
+
 
   &:hover {
     color: #fff;
     background-color: #444444;
   }
 
+  &:active {
+    color: rgba(255, 255, 255, 0.3);
+  }
+
+  &--green {
+    border: none;
+    background-color: rgb(98, 209, 186);
+    color: #fff;
+
+    &:hover {
+      background-color: rgb(98, 209, 186);
+      color: #fff;
+    }
+
+    &:active {
+      background-color: rgba(98, 209, 186, 0.3);
+    }
+  }
+
+
+
   &--arrow {
-    font-size: 0;
+    background-color: transparent;
+    padding: 0;
     border: 1px solid #ececec;
+
+    &:hover {
+      background-color: transparent;
+
+      & .btn__arrow-icon polygon {
+        fill: rgba(0, 0, 0, 0.6);
+      }
+    }
+
+    &:active {
+      & .btn__arrow-icon polygon {
+        fill: rgba(0, 0, 0, 0.3);
+      }
+    }
   }
 }
