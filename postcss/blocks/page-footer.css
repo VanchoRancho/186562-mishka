@@ -68,7 +68,7 @@
 .page-footer__copyright {
   margin: 0;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   min-height: 80px;
   font-size: 19px;
@@ -76,6 +76,7 @@
   line-height: 19px;
 
   @media ($(tablet-widths)) {
+    justify-content: flex-end;
     min-height: 143px;
     width: 220px;
   }

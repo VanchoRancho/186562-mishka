@@ -1,10 +1,20 @@
 .page-title {
-  padding-top: 73px;
-  padding-bottom: 74px;
+  padding-top: 70px;
+  padding-bottom: 76px;
   font-family: "Open Sans";
   background-color: #f9f9f9;
 
+  @media ($(tablet-widths)) {
+    padding-top: 94px;
+  }
+
+  @media ($(desktop-widths)) {
+    padding-top: 93px;
+    padding-bottom: 104px;
+  }
+
   &--with-bg {
+    padding-top: 73px;
     padding-bottom: 120px;
     background-image: url("../img/hero-mobile@1x.jpg");
     background-repeat: no-repeat;

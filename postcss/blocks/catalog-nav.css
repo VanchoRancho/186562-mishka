@@ -1,5 +1,5 @@
 .catalog-nav {
-  background-color: #f8f8f8;
+  background-color: #f9f9f9;
 }
 
 .catalog-nav__items {
@@ -45,7 +45,7 @@
   }
 }
 
-.catalog-nav__item  a {
+.catalog-nav__link {
   display: flex;
   box-sizing: border-box;
   width: 100%;
@@ -92,6 +92,12 @@
         fill: rgba(20, 144, 128, 0.3);
       }
     }
+  }
+}
+
+.catalog-nav__link {
+  &:hover {
+    padding-bottom: 5px;
   }
 }
 

@@ -1,24 +1,60 @@
 .main-nav {
-  display: flex;
-  justify-content: space-between;
-  flex-direction: column;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
   font-family: "Open Sans";
   color: #000000;
   background-color: #fff;
+}
 
+.main-nav__wrapper {
+  position: relative;
 
   @mixin container;
 
+}
+
+.main-nav__hider {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 320px;
+  font-size: 17px;
+  font-weight: 700;
+  line-height: 24px;
+  font-family: "Open Sans";
+  color: #000000;
+  background-color: #fff;
+  position: absolute;
+  transform-origin: top;
+  transition: transform 0.4s ease-in-out;
+
+
+
+  &--hide {
+  transform: scaleY(0);
+  }
+
+  &--show {
+    transform: scaleY(1);
+  }
+
+  &--no-js {
+    position: static;
+    transform: scaleY(1);
+  }
+
   @media ($(tablet-widths)) {
+    transform: none;
+    transition: none;
+    position: static;
+    width: auto;
     flex-direction: row;
     flex-wrap: wrap;
     height: 88px;
   }
 }
-
 
 .main-nav__item {
   padding-left: 76px;
@@ -26,19 +62,6 @@
   padding-bottom: 28px;
   border-bottom: 1px solid #ececec;
   flex-grow: 0;
-
-  &--show {
-    display: block;
-    position: relative;
-  }
-
-  &--hide {
-    display: none;
-
-    @media ($(tablet-widths)) {
-      display: block;
-    }
-  }
 
   @media ($(tablet-widths)) {
     padding-left: 0px;
@@ -48,9 +71,12 @@
   @media ($(desktop-widths)) {
   }
 
-  &--logo {
+  &--toggler {
     font-size: 0;
     line-height: 0;
+    box-sizing: border-box;
+    width: 320px;
+    margin: 0 auto;
     padding-left: 116px;
     padding-right: 30px;
     padding-top: 22px;
@@ -60,6 +86,21 @@
     align-items: center;
 
     @media ($(tablet-widths)) {
+      display: none;
+    }
+  }
+
+  &--logo {
+    display: none;
+    font-size: 0;
+    line-height: 0;
+    padding-left: 116px;
+    padding-right: 30px;
+    padding-top: 22px;
+    padding-bottom: 22px;
+
+    @media ($(tablet-widths)) {
+      display: block;
       padding-left: 0px;
       order: -3;
       padding-top: 22px;
@@ -193,7 +234,7 @@
 
 }
 
-.main-nav__nav-toggle {
+.main-nav__toggle-btn {
   display: inline-block;
   vertical-align: top;
   width: 21px;
