@@ -76,7 +76,7 @@
     width: 500px;
   }
   @media ($(desktop-widths)) {
-    width: 870px;
+    width: 500px;
   }
 
   &--color {
@@ -143,6 +143,7 @@
 
   }
   @media ($(desktop-widths)) {
+    margin-left: 150px;
 
   }
 }

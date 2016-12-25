@@ -3,6 +3,7 @@
   margin: 0 auto;
 
   @media ($(tablet-widths)) {
+<<<<<<< HEAD
     width: 668px;
     padding-left: 50px;
     padding-right: 50px;
@@ -31,6 +32,34 @@
     width: 1050px;
     padding-left: 50px;
     padding-right: 50px;
+=======
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 668px;
+  }
+
+  @media ($(desktop-widths)) {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 1050px;
+  }
+}
+
+@define-mixin container-left-padding {
+  width: 320px;
+  margin: 0 auto;
+
+  @media ($(tablet-widths)) {
+    padding-left: 50px;
+    padding-right: 50px;
+    width: 668px;
+  }
+
+  @media ($(desktop-widths)) {
+    padding-left: 225px;
+    padding-right: 50px;
+    width: 875px;
+>>>>>>> b25e07ec5b79f3c4a84d82d94e85ea421c6befb0
   }
 }
 

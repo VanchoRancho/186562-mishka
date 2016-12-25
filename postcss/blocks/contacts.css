@@ -33,6 +33,8 @@
     width: 350px;
     padding: 0px;
   }
+
+
 }
 
 
@@ -113,6 +115,7 @@
   background-position: center top;
 
   @media ($(tablet-widths)) {
+    margin-left: -50px;
     width: 768px;
     height: 457px;
     background-size: 100%;
