@@ -215,3 +215,36 @@
 
   }
 }
+
+.week-best__order-button {
+
+}
+
+.week-best__body {
+
+  @media ($(tablet-widths)) {
+    width: 50%;
+    box-sizing: border-box;
+    margin-bottom: 113px;
+    padding-right: 50px;
+
+  }
+
+  @media ($(desktop-widths)) {
+    padding-left: 175px;
+  }
+}
+
+.week-best__order {
+
+  @media ($(tablet-widths)) {
+    width: 50%;
+    box-sizing: border-box;
+    margin-top: -113px;
+    padding-right: 50px;
+  }
+
+  @media ($(desktop-widths)) {
+    padding-left: 175px;
+  }
+}
