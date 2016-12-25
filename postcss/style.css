@@ -3,6 +3,7 @@
 
 @import "global/fonts.css";
 @import "global/normalize.css";
+@import "global/scaffolding.css";
 
 @import "blocks/about-us.css";
 @import "blocks/btn.css";
@@ -23,7 +24,3 @@
 @import "blocks/social-links.css";
 @import "blocks/week-best.css";
 @import "blocks/zigzag-wrapper.css";
-
-img {
-  display: block;
-}

@@ -177,7 +177,22 @@
     background-size: 100%;
     margin-bottom: 0px;
   }
+}
 
+.contacts__map-iframe {
+  display: block;
+  width: 320px;
+  height: 457px;
+
+  @media ($(tablet-widths)) {
+    width: 768px;
+    height: 457px;
+  }
+
+  @media ($(desktop-widths)) {
+    width: 525px;
+    height: 457px;
+  }
 }
 
 .contacts__box {
