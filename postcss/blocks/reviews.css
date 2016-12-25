@@ -1,17 +1,25 @@
 .reviews {
-  position: relative;
+  display: flex;
+  flex-direction: column;
   background-color: #fff;
   padding: 30px;
   font-family: "Open Sans";
   font-size: 0;
   color: #000000;
 
-  @mixin clearfix;
+  @mixin container-w-padding;
 
   @media ($(tablet-widths)) {
-    @mixin container-left-padding;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
   }
 
+  @media ($(desktop-widths)) {
+    padding-left: 225px;
+    width: 875px;
+  }
 }
 
 .reviews__title {
@@ -23,11 +31,13 @@
   line-height: 30px;
 
   @media ($(tablet-widths)) {
-    margin-right: 200px;
+    order: -2;
+    margin-bottom: 0px;
+    font-size: 43px;
+    line-height: 50px;
   }
 
   @media ($(desktop-widths)) {
-    margin-right: 200px;
   }
 }
 
@@ -45,6 +55,16 @@
   font-weight: 400;
   line-height: 30px;
   color: #444444;
+
+  @media ($(tablet-widths)) {
+    width: 100%;
+    box-sizing: border-box;
+    margin-top: 40px;
+    font-size: 17px;
+  }
+
+  @media ($(desktop-widths)) {
+  }
 }
 
 .reviews__author-name {
@@ -53,6 +73,13 @@
   font-weight: 700;
   line-height: 24px;
   font-style: normal;
+
+  @media ($(tablet-widths)) {
+    font-size: 17px;
+  }
+
+  @media ($(desktop-widths)) {
+  }
 }
 
 .reviews__author-link {
@@ -60,6 +87,13 @@
   font-size: 18px;
   font-weight: 400;
   line-height: 30px;
+
+  @media ($(tablet-widths)) {
+    font-size: 17px;
+  }
+
+  @media ($(desktop-widths)) {
+  }
 }
 
 .reviews__slider-button {
@@ -69,6 +103,7 @@
   margin-bottom: 38px;
 
   @media ($(tablet-widths)) {
+    margin-bottom: 0px;
     width: 100px;
   }
 
@@ -79,33 +114,26 @@
 
 .reviews__slider {
   @media ($(tablet-widths)) {
-    float: right;
   }
 
   @media ($(desktop-widths)) {
-    float: right;
   }
 }
 
 .reviews__write-button {
   @media ($(tablet-widths)) {
+    order: -1;
     width: auto;
-    position: absolute;
-    top: 30px;
-    right: 50px;
   }
 
   @media ($(desktop-widths)) {
-    width: auto;
   }
 }
 
 .reviews__author {
   @media ($(tablet-widths)) {
-    float: left;
   }
 
   @media ($(desktop-widths)) {
-    float: left;
   }
 }

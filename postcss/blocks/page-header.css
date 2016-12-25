@@ -1,3 +1,8 @@
-.page-header__logo {
-  background-color: #fff;
+.page-header {
+  @media ($(tablet-widths)) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 88px;
+    border-bottom: 1px solid #ececec;
+  };
 }

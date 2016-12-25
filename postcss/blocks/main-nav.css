@@ -1,4 +1,7 @@
 .main-nav {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: column;
   font-size: 17px;
   font-weight: 700;
   line-height: 24px;
@@ -7,47 +10,12 @@
   background-color: #fff;
 
 
-  @media ($(tablet-widths)) {
-    position: relative;
-  }
-}
-
-.main-nav__popup {
-  @mixin clearfix;
-  background-color: #fff;
   @mixin container;
 
   @media ($(tablet-widths)) {
-    height: 79px;
-  }
-}
-
-.main-nav__wrapper {
-  @media ($(desktop-widths)) {
-
-    @mixin clearfix;
-    background-color: #fff;
-
-    @mixin container;
-  }
-}
-
-.main-nav__new-wrapper {
-  @media ($(desktop-widths)) {
-    background-color: #f9f9f9;
-  }
-}
-
-
-.main-nav__items {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-
-  @mixin clearfix;
-
-  @media ($(tablet-widths)) {
-
+    flex-direction: row;
+    flex-wrap: wrap;
+    height: 88px;
   }
 
   @media ($(desktop-widths)) {
@@ -61,10 +29,11 @@
   border-bottom: 1px solid #ececec;
 
   @media ($(tablet-widths)) {
-    display: inline-block;
-    vertical-align: top;
-    border: none;
     padding-left: 0px;
+    border: none;
+  }
+
+  @media ($(desktop-widths)) {
   }
 
   &--logo {
@@ -75,62 +44,101 @@
     padding-bottom: 22px;
 
     @media ($(tablet-widths)) {
-
-      display: none;
+      padding-left: 0px;
+      order: -3;
+      flex: 1;
     }
   }
 
-  &--logo-m {
-    display: none;
-
+  &--catalog {
     @media ($(tablet-widths)) {
-      display: inline-block;
-      float: left;
-      padding: 0;
+      margin-right: 37px;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 24px;
+      color: #fff;
+    }
+
+    @media ($(desktop-widths)) {
+      order: -5;
+      width: 184px;
+      margin-right: 0px;
+      font-size: 17px;
+      border-right: 1px solid #ececec;
+
+    }
+  }
+
+  &--custom {
+    @media ($(tablet-widths)) {
+      margin-right: auto;
+      font-size: 15px;
+      font-weight: 700;
+      line-height: 24px;
+      color: #fff;
+    }
+
+    @media ($(desktop-widths)) {
+      order: -4;
+      width: 221px;
+      padding-left: 35px;
+      font-size: 17px;
     }
   }
 
   &--search {
-
     @media ($(tablet-widths)) {
+      order: -2;
+      margin-left: 180px;
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
   }
 
-  &--cart {
-
+  &--basket {
     @media ($(tablet-widths)) {
-      float: right;
+      order: -1;
+      padding-top: 32px;
+      padding-bottom: 32px;
     }
   }
 
   &--new {
-
-    @media ($(tablet-widths)) {
-      display: none;
-    }
-
+    display: none;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #fff;
     @media ($(desktop-widths)) {
-      display: inline-block;
-      float: left;
+      display: block;
     }
   }
 
   &--sale {
-
-    @media ($(tablet-widths)) {
-      display: none;
-    }
-
+    display: none;
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #fff;
     @media ($(desktop-widths)) {
-      display: inline-block;
-      float: left;
+      display:block;
+      margin-right: auto;
     }
   }
 
   &--delivery {
+    display: none;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 24px;
+    color: #444444;
 
     @media ($(tablet-widths)) {
-      float: right;
+      display: block;
+    }
+
+    @media ($(desktop-widths)) {
+      display: block;
     }
   }
 
@@ -156,72 +164,4 @@
 .main-nav__item a {
   text-decoration: none;
   color: #000000;
-}
-
-.main-nav__items {
-  @mixin clearfix;
-
-
-  @media ($(tablet-widths)) {
-    margin-top: 90px;
-    float: left;
-  }
-
-  @media ($(desktop-widths)) {
-    margin-top: 0px;
-    float: left;
-    width: 450px;
-  }
-}
-
-.main-nav__main-items {
-  background-color: #fff;
-  width: 100%;
-
-  @mixin clearfix;
-
-  @media ($(tablet-widths)) {
-    position: absolute;
-    text-align: right;
-    width: 668px;
-  }
-
-  @media ($(desktop-widths)) {
-    position: static;
-    width: 600px;
-    float: right;
-  }
-}
-
-.main-nav__new-items {
-  display: none;
-
-  @mixin clearfix;
-
-
-  @media ($(tablet-widths)) {
-    display: block;
-    margin-top: 90px;
-    float: right;
-
-  }
-
-  @media ($(desktop-widths)) {
-    margin-top: 0px;
-    float: none;
-  }
-}
-
-.main-nav__delivery {
-  display: none;
-
-  @media ($(tablet-widths)) {
-    display: block;
-    float: right;
-  }
-
-  @media ($(desktop-widths)) {
-    display: block;
-    float: right;
-  }
 }

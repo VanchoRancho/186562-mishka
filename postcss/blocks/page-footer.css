@@ -2,17 +2,21 @@
   background-color: #f1f1f1;
   font-family: "Open Sans";
   color: #000000;
+}
+
+.page-footer__container {
+  display: flex;
+  flex-direction: column;
+
+  @mixin container-w-padding;
 
   padding-top: 25px;
   padding-bottom: 25px;
 
   @media ($(tablet-widths)) {
-    line-height: 0;
-    font-size: 0;
-    padding-top: 25px;
-    padding-bottom: 25px;
+    flex-direction: row;
+    justify-content: space-between;
   }
-
 }
 
 .page-footer__wrapper {
@@ -27,14 +31,9 @@
   margin: 0;
 
   @media ($(tablet-widths)) {
+    display: block;
+    width: 222px;
     text-align: left;
-    display: inline-block;
-    width: 220px;
-  }
-
-  @media ($(desktop-widths)) {
-    display: inline-block;
-    width: 350px;
   }
 }
 
@@ -43,13 +42,8 @@
   text-align: center;
 
   @media ($(tablet-widths)) {
-    display: inline-block;
-    width: 220px;
-  }
-
-  @media ($(desktop-widths)) {
-    display: inline-block;
-    width: 350px;
+    width: 222px;
+    text-align: center;
   }
 }
 
@@ -61,13 +55,7 @@
   text-align: center;
 
   @media ($(tablet-widths)) {
-    display: inline-block;
-    width: 220px;
+    width: 222px;
     text-align: right;
-  }
-
-  @media ($(desktop-widths)) {
-    display: inline-block;
-    width: 350px;
   }
 }

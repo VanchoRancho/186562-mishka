@@ -3,6 +3,36 @@
   margin: 0 auto;
 
   @media ($(tablet-widths)) {
+<<<<<<< HEAD
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media ($(desktop-widths)) {
+    width: 1050px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+}
+
+@define-mixin container-w-padding {
+  width: 260px;
+  padding-left: 30px;
+  padding-right: 30px;
+  margin: 0 auto;
+
+  @media ($(tablet-widths)) {
+    width: 668px;
+    padding-left: 50px;
+    padding-right: 50px;
+  }
+
+  @media ($(desktop-widths)) {
+    width: 1050px;
+    padding-left: 50px;
+    padding-right: 50px;
+=======
     padding-left: 50px;
     padding-right: 50px;
     width: 668px;
@@ -29,6 +59,7 @@
     padding-left: 225px;
     padding-right: 50px;
     width: 875px;
+>>>>>>> b25e07ec5b79f3c4a84d82d94e85ea421c6befb0
   }
 }
 

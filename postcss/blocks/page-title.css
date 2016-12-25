@@ -2,11 +2,7 @@
   padding-top: 76px;
   padding-bottom: 74px;
   font-family: "Open Sans";
-  background-color: #f9f9f9;
-
-  @media ($(tablet-widths)) {
-    padding-top: 105px;
-  }
+  background-color: #f8f8f8;
 
   &--with-bg {
     padding-bottom: 120px;
@@ -29,4 +25,15 @@
   line-height: 30px;
   color: #000000;
   text-align: center;
+
+  @media ($(tablet-widths)) {
+    width: auto;
+    font-size: 43px;
+    line-height: 50px;
+  }
+
+  @media ($(desktop-widths)) {
+    font-size: 53px;
+    line-height: 57px;
+  }
 }

@@ -3,6 +3,8 @@
   display: block;
   box-sizing: border-box;
   padding: 20px;
+  padding-top: 15px;
+  padding-bottom: 16px;
 
   font-size: 17px;
   font-weight: 700;
