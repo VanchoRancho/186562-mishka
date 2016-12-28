@@ -36,6 +36,9 @@
     background-position: 50px 33px;
 
   }
+
+  @mixin zig-zag-line;
+
 }
 
 .reviews__title {

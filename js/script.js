@@ -4,9 +4,21 @@ var popupContainer = document.querySelector(".pop-up");
 var popupOpener1 = document.querySelector(".week-best__order-button");
 var popupOpener2 = document.querySelector(".manufacturing__make-order");
 
-popupOpener1.addEventListener("click", Opener);
 
+if (popupOpener1) {
+  popupOpener1.addEventListener("click", Opener);
+}
 
+if (popupOpener2) {
+  popupOpener2.addEventListener("click", Opener);
+}
+
+function Opener(event) {
+  event.preventDefault();
+  if (popupContainer.classList.contains("pop-up--close")) {
+    popupContainer.classList.remove("pop-up--close");
+  }
+}
 
 
 if (menuPopup.classList.contains("main-nav__hider--no-js")) {

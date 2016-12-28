@@ -2,6 +2,14 @@
   display: flex;
   flex-direction: column;
   background-color: #fff;
+
+  @media ($(tablet-widths)) {
+    padding-top: 24px;
+  }
+
+  @media ($(desktop-widths)) {
+    padding-top: 34px;
+  }
 }
 
 .catalog__items {

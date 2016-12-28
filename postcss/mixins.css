@@ -42,3 +42,69 @@
   clear: both;
   }
 }
+
+@define-mixin zig-zag-fill {
+  position: relative;
+
+  &::after {
+    content: "";
+    width: 100vw;
+    display: none;
+
+    @media ($(tablet-widths)) {
+      display: block;
+      position: absolute;
+      z-index: 100;
+      bottom: -12px;
+      min-height: 24px;
+      background-image: url("../img/bg-zigzag-fill.svg");
+      background-repeat: repeat-x;
+      background-size: contain;
+    }
+
+    @media ($(desktop-widths)) {
+      bottom: -17px;
+      min-height: 34px;
+    }
+  }
+}
+
+@define-mixin zig-zag-line {
+  position: relative;
+  margin-bottom: 6px;
+
+  @media ($(tablet-widths)) {
+    margin-bottom: 15px;
+  }
+
+  @media ($(desktop-widths)) {
+    margin-bottom: 23px;
+  }
+
+
+  &::after {
+    content: "";
+    width: 100vw;
+    display: block;
+    position: absolute;
+    z-index: 100;
+    bottom: -6px;
+    left: 50%;
+    transform: translateX(-50%);
+    min-height: 6px;
+    background-image: url("../img/bg-zigzag-line.svg");
+    background-repeat: repeat-x;
+    background-size: contain;
+    background-position: left;
+
+    @media ($(tablet-widths)) {
+      bottom: -15px;
+      min-height: 15px;
+    }
+
+    @media ($(desktop-widths)) {
+      bottom: -23px;
+      min-height: 23px;
+    }
+  }
+}

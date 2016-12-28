@@ -83,6 +83,7 @@
   position: relative;
   width: 260px;
   height: 150px;
+  background-color: #e2e2e2;
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
   background-size: 260px auto;
