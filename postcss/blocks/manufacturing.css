@@ -1,5 +1,5 @@
 .manufacturing {
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
   background-color: #fff;
   padding-bottom: 58px;
@@ -73,7 +73,7 @@
     padding-left: 75px;
     padding-right: 75px;
     box-sizing: border-box;
-    margin-bottom: 282px;
+    margin-bottom: 306px;
     background-position: 77px 41px;
 
   }
@@ -85,7 +85,7 @@
   height: 150px;
   background-image: url("../img/video-mobile@1x.jpg");
   background-repeat: no-repeat;
-  background-size: 100%;
+  background-size: 260px auto;
 
   @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     background-image: url("../img/video-mobile@2x.jpg");
@@ -96,6 +96,7 @@
     height: 455px;
     order: -1;
     background-image: url("../img/video-tablet@1x.jpg");
+    background-size: 668px auto;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/video-tablet@2x.jpg");
@@ -107,6 +108,7 @@
     width: 682px;
     height: 455px;
     background-image: url("../img/video-desktop@1x.jpg");
+    background-size: 682px auto;
 
     @media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
       background-image: url("../img/video-desktop@2x.jpg");
@@ -149,6 +151,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  width: 100%;
 
   @media ($(tablet-widths)) {
     border: 1px solid #ececec;
@@ -159,7 +162,8 @@
     padding: 0px;
     width: 366px;
     box-sizing: border-box;
-    margin-top: -282px;
+    margin-top: -306px;
+    padding-top: 24px;
     padding-left: 75px;
     padding-right: 57px;
   }

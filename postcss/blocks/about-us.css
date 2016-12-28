@@ -2,7 +2,7 @@
   background-color: #fff;
   padding: 30px;
   padding-top: 27px;
-  font-family: "Open Sans";
+  font-family: "Open Sans", "Arial", sans-serif;
   color: #000000;
 
   @mixin container-w-padding;
@@ -21,17 +21,20 @@
   font-weight: 700;
   line-height: 30px;
   margin: 0px;
+  margin-left: -2px;
 
   @media ($(tablet-widths)) {
     font-size: 43px;
     line-height: 50px;
     margin-bottom: 18px;
+    margin-left: -5px;
   }
 
   @media ($(desktop-widths)) {
     padding-left: 175px;
     font-size: 53px;
     line-height: 57px;
+    margin-left: -6px;
   }
 }
 
@@ -41,10 +44,12 @@
   list-style: none;
   margin: 0;
   padding: 0;
+  padding-top: 2px;
 
   @media ($(tablet-widths)) {
     flex-direction: row;
     flex-wrap: wrap;
+    padding: 0;
 
   }
 
