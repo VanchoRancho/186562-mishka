@@ -11,8 +11,8 @@
   }
 
   @media ($(desktop-widths)) {
-   flex-direction: column;
-   width: 316px;
+    flex-direction: column;
+    width: 316px;
   }
 }
 
