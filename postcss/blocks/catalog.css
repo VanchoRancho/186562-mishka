@@ -38,3 +38,8 @@
     margin-bottom: 57px;
   }
 }
+
+.catalog-nav__ie_flex_min-height_fix {
+  display: flex;
+  flex-direction: column;
+}

@@ -1,6 +1,13 @@
 var menuBtn = document.querySelector(".main-nav__toggle-btn");
 var menuPopup = document.querySelector(".main-nav__hider");
 var popupContainer = document.querySelector(".pop-up");
+var popupOpener1 = document.querySelector(".week-best__order-button");
+var popupOpener2 = document.querySelector(".manufacturing__make-order");
+
+popupOpener1.addEventListener("click", Opener);
+
+
+
 
 if (menuPopup.classList.contains("main-nav__hider--no-js")) {
   menuPopup.classList.remove("main-nav__hider--no-js");
@@ -18,7 +25,16 @@ menuBtn.addEventListener("click", function(event) {
   }
 });
 
-popupContainer.addEventListener("click", function(event) {
+popupContainer.addEventListener("click", Closer);
+
+function Closer(event) {
   event.preventDefault();
   popupContainer.classList.add("pop-up--close");
-});
+}
+
+function Opener(event) {
+  event.preventDefault();
+  if (popupContainer.classList.contains("pop-up--close")) {
+    popupContainer.classList.remove("pop-up--close");
+  }
+}
