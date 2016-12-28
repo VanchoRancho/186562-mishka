@@ -6,14 +6,14 @@
   color: #000000;
   background-color: #fff;
 
- @media ($(tablet-widths)) {
-   flex-direction: row;
- }
+  @media ($(tablet-widths)) {
+    flex-direction: row;
+  }
 
- @media ($(desktop-widths)) {
+  @media ($(desktop-widths)) {
    flex-direction: column;
    width: 316px;
- }
+  }
 }
 
 .product__img-wrapper{
